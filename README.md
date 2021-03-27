@@ -37,3 +37,12 @@ dvc add data_given / winequality
 git add .
 
 git commit
+
+one liner Change
+git add . && git commit -m "Updated REAdME.md"
+ 
+git remote add origin "Origin-Path"
+
+git branch -M main
+
+git push origin main
