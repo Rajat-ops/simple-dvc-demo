@@ -1,9 +1,9 @@
 create env
 
-'''bash
+```bash
 
 conda create -n wineQ python=3.7 -y
-'''
+```
 
 activate env
 '''bash
@@ -46,3 +46,13 @@ git remote add origin "Origin-Path"
 git branch -M main
 
 git push origin main
+
+setup commands -
+```bash
+pip install -e .
+```
+
+build your own packages
+```bash
+python setup.py sdist bdist_wheel
+```
