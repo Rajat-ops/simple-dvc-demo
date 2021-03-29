@@ -1,58 +1,70 @@
-create env
+create env 
 
 ```bash
-
-conda create -n wineQ python=3.7 -y
+conda create -n wineq python=3.7 -y
 ```
 
 activate env
-'''bash
-conda activate wineQ
-'''
+```bash
+conda activate wineq
+```
 
-create req file
-'''bash
-requirements.txt
+created a req file
 
-'''
-
-install req
-'''bash
+install the req
+```bash
 pip install -r requirements.txt
-'''
+```
+download the data from 
 
-download the data --> put in data_given
+https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
-"""
-drive link
-https://drive.google.com/drive/folders/1xw0XX-WK74uxtFFLySbtnX-ODdmdK5Ec
-"""
-
+```bash
 git init
-
-dvc init
-
-dvc add data_given / winequality
-
+```
+```bash
+dvc init 
+```
+```bash
+dvc add data_given/winequality.csv
+```
+```bash
 git add .
+```
+```bash
+git commit -m "first commit"
+```
 
-git commit
+oneliner updates  for readme
 
-one liner Change
-git add . && git commit -m "Updated REAdME.md"
- 
-git remote add origin "Origin-Path"
-
+```bash
+git add . && git commit -m "update Readme.md"
+```
+```bash
+git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
 git branch -M main
-
 git push origin main
+```
+
+tox command -
+```bash
+tox
+```
+for rebuilding -
+```bash
+tox -r 
+```
+pytest command
+```bash
+pytest -v
+```
 
 setup commands -
 ```bash
-pip install -e .
+pip install -e . 
 ```
 
-build your own packages
+build your own package commands- 
 ```bash
 python setup.py sdist bdist_wheel
 ```
